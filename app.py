@@ -61,7 +61,9 @@ fig['layout']['sliders'][0]['pad']=dict(t=50)
 # fig.show()
 
 st.title("연도별 최고 발생 범죄 현황")
-st.plotly_chart(fig_bar)
+st.plotly_chart(fig_bar, use_container_width=True)
 
 st.title("연도별 지역 인구밀도 대비 범죄 발생률")
-st.plotly_chart(fig)
+st.plotly_chart(fig, use_container_width=True)
+
+st.write("Repository [link](https://github.com/masterfulEJ/DAnalytics_Proj.git)")
