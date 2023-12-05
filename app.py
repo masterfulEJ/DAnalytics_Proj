@@ -46,7 +46,7 @@ rgn_crime_cnt['1만명당 검거건수'] = rgn_crime_cnt['검거건수'] / (rgn_
 fig = px.scatter(rgn_crime_cnt, x="인구", y="1만명당 검거건수",
                  size="검거건수", color="지역",
                  log_x=False, log_y=True, size_max=60,
-                 range_y=[300, 2500], range_x=[100000, 15000000],
+                 range_y=[100, 2500], range_x=[100000, 15000000],
                  animation_frame="년",
                  color_discrete_sequence=px.colors.qualitative.Plotly_r)
 
